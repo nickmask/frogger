@@ -1,0 +1,9 @@
+td {
+  border: 1px black solid;
+  height: 40px;
+  width: 40px;
+}
+
+.frogger {
+  background-image: url('http://www.codeproject.com/KB/silverlight/FroggerInSilverlight/frog.png')
+}
