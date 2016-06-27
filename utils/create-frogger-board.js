@@ -1,4 +1,5 @@
 import startButton from './start-button'
+import createCar from './create-car'
 
 export default function (size) {
   const tbl = document.createElement('table')
@@ -15,4 +16,5 @@ export default function (size) {
   tbl.appendChild(tblBody)
   document.body.appendChild(tbl)
   startButton()
+  createCar()
 }
