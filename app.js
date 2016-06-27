@@ -32,6 +32,7 @@ function drawPaddle () {
 function draw () {
   ctx.clearRect(0, 0, canvas.width, canvas.height)
   drawBall()
+  drawPaddle()
   x += dx
   y += dy
   if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
@@ -39,6 +40,12 @@ function draw () {
   }
   if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
     dy = -dy
+  }
+  if (rightPressed && paddleX < canvas.width - paddleWidth) {
+    paddleX += 7
+  }
+  if (leftPressed && paddleX > 0) {
+    paddleX -= 7
   }
 }
 
