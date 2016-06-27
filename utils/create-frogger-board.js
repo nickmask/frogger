@@ -1,3 +1,5 @@
+import startButton from './start-button'
+
 export default function (size) {
   const tbl = document.createElement('table')
   const tblBody = document.createElement('tbody')
@@ -12,4 +14,5 @@ export default function (size) {
   }
   tbl.appendChild(tblBody)
   document.body.appendChild(tbl)
+  startButton()
 }
